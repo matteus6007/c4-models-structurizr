@@ -1,10 +1,10 @@
 # Building C4 Models using Structurizr
 
-https://structurizr.com/
+https://structurizr.com/ and https://github.com/structurizr/dsl
 
 ## Previewing Images
 
-https://github.com/structurizr/dsl and https://github.com/structurizr/dsl/blob/master/docs/language-reference.md
+https://dev.to/simonbrown/getting-started-with-structurizr-lite-27d0
 
 ### Docker
 
@@ -67,3 +67,5 @@ Generate diagram image(s):
 ```
 docker run --rm -it -v $PWD/:/docs extenda/structurizr-to-png --path diagrams/workspace.dsl --render-with structurizr --output ../docs
 ```
+
+See [/docs](./docs/diagrams.md) for generated images.
