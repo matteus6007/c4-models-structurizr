@@ -1,13 +1,17 @@
 # E-Commerce Diagrams
 
-## E-Commerce Platform Context Diagram
+1. [E-Commerce Platform](#e-commerce-platform-context-diagram)
+    1. [Containers](#e-commerce-platform-container-diagram)
+        1. [Web Application - Components](#web-application-component-diagram)
 
-![E-Commerce Platform](./structurizr-E-commercePlatform-SystemContext.png)
+## E-Commerce Platform - System Context
 
-## E-Commerce Platform Container Diagram
+![E-Commerce Platform - System Context](./structurizr-E-commercePlatform-SystemContext.png)
 
-![E-Commerce Platform System](./structurizr-E-commercePlatform-Container.png)
+### E-Commerce Platform - Containers
 
-### Web Application Component Diagram
+![E-Commerce Platform - Containers](./structurizr-E-commercePlatform-Container.png)
 
-![Web Application Container](./structurizr-E-commercePlatform-3-Component.png)
+#### E-Commerce Platform - Web Application - Components
+
+![E-Commerce Platform - Web Application - Components](./structurizr-E-commercePlatform-3-Component.png)
