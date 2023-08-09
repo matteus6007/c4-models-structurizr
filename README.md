@@ -2,6 +2,10 @@
 
 https://structurizr.com/ and https://github.com/structurizr/dsl
 
+## VS Code Extensions
+
+* [C4 DSL Extension](https://marketplace.visualstudio.com/items?itemName=systemticks.c4-dsl-extension) - syntax highlighting and validation
+
 ## Previewing Images
 
 https://dev.to/simonbrown/getting-started-with-structurizr-lite-27d0
