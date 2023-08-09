@@ -52,17 +52,17 @@ workspace {
     }
 
     views {
-        systemContext platform {
+        systemContext platform "Ecommerce-Platform-Context" {
             include * emailPlatform
             autolayout lr
         }
 
-        container platform {
+        container platform "Ecommerce-Platform-Container" {
             include *
             autolayout lr            
         }
 
-        component webApp {
+        component webApp "Web-Application-Component" {
             include *
             autolayout lr            
         }
