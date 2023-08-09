@@ -4,11 +4,11 @@ workspace {
 
         group "E-Commerce Platform" {
             platform = softwareSystem "E-commerce Platform" "Allows customers to search view and purchase products" {
-                webApp = container "Web Application" "React/Nx" "Web frontend for buying a product" {
-                    landingApp = component "Homepage" "React/Nx" "Landing microsite"
-                    searchApp = component "Search" "React/Nx" "Search microsite"
-                    productApp = component "Product Details" "React/Nx" "Product Details microsite"
-                    orderApp = component "Orders" "React/Nx" "Orders microsite"
+                webApp = container "Web Application" "Web frontend for buying a product" "React/Nx" {
+                    landingApp = component "Homepage" "Landing microsite" "React/Nx"
+                    searchApp = component "Search" "Search microsite" "React/Nx"
+                    productApp = component "Product Details" "Product Details microsite" "React/Nx"
+                    orderApp = component "Orders" "Orders microsite" "React/Nx"
 
                     customer -> landingApp "Visits /" "HTTPS"
                     customer -> searchApp "Visits /search" "HTTPS"
@@ -16,13 +16,13 @@ workspace {
                     customer -> orderApp "Visits /orders/{id}" "HTTPS"
                 }
 
-                api = container "API" "API Gateway" "API Gateway that manages products" {
-                    searchApi = component "Search API" "API Gateway" "API that provides product filtering"
-                    productApi = component "Product API" "API Gateway" "API that manages product details"
-                    orderApi = component "Orders API" "API Gateway" "API that manages customer orders"
+                api = container "API" "API Gateway that manages products" "API Gateway" {
+                    searchApi = component "Search API" "API that provides product filtering" "API Gateway"
+                    productApi = component "Product API" "API that manages product details" "API Gateway"
+                    orderApi = component "Orders API" "API that manages customer orders" "API Gateway"
                 }
 
-                db = container "Database" "DynamoDB" "Tables to store product and customer data" {
+                db = container "Database" "Tables to store product and customer data" "DynamoDB" {
                     tags "Database"
                 }
 
